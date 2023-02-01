@@ -1,6 +1,7 @@
 
 import * as C from './styles';
 import Button from '@mui/material/Button';
+import ButtonProp from '../../'
 export default function Home () {
     return(
         <C.Container>
