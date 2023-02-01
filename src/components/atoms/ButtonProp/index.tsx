@@ -7,8 +7,8 @@ type Props = {
 }
 export default function ButtonProp({name, bg, color, size}:Props){
     return(
-        <C.Button name={name} bg={bg} color={color} size={size}>
-            <C.ButtonTitle >{name}</C.ButtonTitle>
+        <C.Button name={name} bg={bg}>
+            <C.ButtonTitle color={color} size={size}>{name}</C.ButtonTitle>
         </C.Button>
     )
 } 
