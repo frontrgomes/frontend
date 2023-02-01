@@ -1,9 +1,14 @@
-import * as C from './styled'
-
-export default ButtonProp function (){
+import * as C from './styles'
+type Props = {
+    name:string,
+    bg:string,
+    color:string,
+    size:string
+}
+export default function ButtonProp({name, bg, color, size}:Props){
     return(
-        <C.Button>
-            <C.ButtonTitle>Voltar Pra Casa</C.ButtonTitle>
+        <C.Button name={name} bg={bg} color={color} size={size}>
+            <C.ButtonTitle >{name}</C.ButtonTitle>
         </C.Button>
     )
 } 

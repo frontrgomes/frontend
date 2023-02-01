@@ -2,7 +2,8 @@
 import styled from 'styled-components';
 
 export const Button = styled.div`
-    background:#ccc;
+    background: ${props => props.bg};
+    border:1px solid ${props => props.bg};
     padding: 5px 15px;
     width:100%;
     max-width:150px;
@@ -11,6 +12,6 @@ export const Button = styled.div`
     justify-content: center;
 `;
 export const ButtonTitle = styled.a`
-    color:#fff;
-    font-size:15px;
+    color:${props => props.color};
+    font-size:${props => props.size};
 `;
